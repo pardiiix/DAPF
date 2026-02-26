@@ -95,6 +95,31 @@ print("Has config.json:", (out_dir/"config.json").exists())
 PY
 ```
 
+```
+python prompt_finetune.py \
+  --project_root ./ \
+  --logs_root ./output/ \
+  --off_line_model_dir ./model/t5-large \
+  --data_dir ./data/ \
+  --src_data ccc_train_all \
+  --trg_data adress-train_all \
+  --trg_test_data adress-test_all \
+  --model t5 \
+  --model_name t5-large \
+  --template_type manual \
+  --verbalizer_type manual \
+  --template_id 7 \
+  --meta 2 \
+  --seed 0 \
+  --gpu_num 0 \
+  --batch_size 4 \
+  --trg_batch_size 4 \
+  --num_epochs 10 \
+  --ce_class_weights \
+  --last_ckpt \
+  --no_tensorboard
+```
+
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
 2)  the directory to store your output (model or results);
