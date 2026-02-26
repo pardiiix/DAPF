@@ -40,6 +40,9 @@ DAPF-main/
 │  │
 │  ├─ participant_all_ccc_transcript_cut.csv    # optional (older CCC pipeline artifact)
 ```
+Download transcription folder and cc_meta_data.txt and cd_meta_data.txt from box: https://uofi.app.box.com/folder/361770283070 , and upload to data/train directory. This is Adress train data.
+From the same box, in test folder, get transcription and metadata.txt and upload it to data/test directory.
+
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to 1) the parent directory of your prompt_ad_code folder; 2) the directory to store your output (model or results); 3) the directory you store pre-trained model downloaded from huggingface; 4) the directory you store ADReSS data (csv file), respectively.
 --project_root /parent/directory/DAPF \
