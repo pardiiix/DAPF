@@ -60,7 +60,9 @@ pip install -r requirements.txt
 pip uninstall -y openprompt sentencepiece
 pip install --only-binary=:all: "sentencepiece>=0.1.99"
 ```
-
+```
+pip install --no-deps "git+https://github.com/thunlp/OpenPrompt.git"
+```
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
