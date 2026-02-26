@@ -72,6 +72,10 @@ pip install scikit-learn
 pip install matplotlib
 ```
 
+```
+mkdir -p model/t5-large
+```
+
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
 2)  the directory to store your output (model or results);
