@@ -14,25 +14,37 @@ After downloading the DAPF repository and running requirements.txt to install pa
 
 First step is to prepare the data. This is how the data should be stored:
 DAPF-main/
-  data/
-    build_adress_csvs.py
-    build_ccc_labeled_csv.py
-    ADReSS/
-      train/
-        transcription.zip
-        cc_meta_data.txt
-        cd_meta_data.txt
-      test/
-        transcription/           # or transcription.zip
-        meta_data.txt
-        test_results.txt         # optional (challenge format)
-      github_labels/
-        adress-test_all.csv      # optional (labels table from GitHub)
-    CCC/
-      transcripts.zip
-      attributes.zip             # optional (only a list of .trs names)
-      participants.csv
-      transcripts.csv
+├─ data/
+│  ├─ build_adress_csvs.py
+│  ├─ build_ccc_labeled_csv.py
+│  │
+│  ├─ ADReSS/
+│  │  ├─ train/
+│  │  │  ├─ transcription.zip
+│  │  │  ├─ cc_meta_data.txt
+│  │  │  └─ cd_meta_data.txt
+│  │  │
+│  │  ├─ test/
+│  │  │  ├─ transcription/            # OR transcription.zip
+│  │  │  ├─ meta_data.txt
+│  │  │  └─ test_results.txt          # optional (challenge-style template)
+│  │  │
+│  │  └─ github_labels/               # optional (if you have labeled test table)
+│  │     └─ adress-test_all.csv
+│  │
+│  ├─ CCC/
+│  │  ├─ transcripts.zip
+│  │  ├─ participants.csv
+│  │  ├─ transcripts.csv
+│  │  └─ attributes.zip               # optional (often just a transcript list)
+│  │
+│  ├─ adress-train_all.csv            # generated
+│  ├─ adress-test_all.csv             # generated (or merged with github_labels)
+│  └─ ccc_train_all.csv               # generated
+│
+├─ template/
+├─ prompt_finetune.py
+└─ run_prompt_finetune.py
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to 1) the parent directory of your prompt_ad_code folder; 2) the directory to store your output (model or results); 3) the directory you store pre-trained model downloaded from huggingface; 4) the directory you store ADReSS data (csv file), respectively.
 --project_root /parent/directory/DAPF \
