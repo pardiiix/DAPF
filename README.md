@@ -95,7 +95,8 @@ print("Has config.json:", (out_dir/"config.json").exists())
 PY
 ```
 
-```
+On Apple Macbook:
+PYTORCH_ENABLE_MPS_FALLBACK=1 \
 python prompt_finetune.py \
   --project_root ./ \
   --logs_root ./output/ \
@@ -118,8 +119,7 @@ python prompt_finetune.py \
   --ce_class_weights \
   --last_ckpt \
   --no_tensorboard
-```
-
+  ```
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
 2)  the directory to store your output (model or results);
