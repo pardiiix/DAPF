@@ -75,6 +75,15 @@ pip install matplotlib
 ```
 mkdir -p model/t5-large
 ```
+```
+python - <<'PY'
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+m="t5-large"
+AutoTokenizer.from_pretrained(m, cache_dir="model")
+AutoModelForSeq2SeqLM.from_pretrained(m, cache_dir="model")
+print("Downloaded into ./model (HF cache layout).")
+PY
+```
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
