@@ -43,6 +43,20 @@ DAPF-main/
 Download transcription folder and cc_meta_data.txt and cd_meta_data.txt from box: https://uofi.app.box.com/folder/361770283070 , and upload to data/train directory. This is Adress train data.
 From the same box, in test folder, get transcription and metadata.txt and upload it to data/test directory.
 
+```
+brew install python@3.11
+
+cd /Users/pardisranjbar/Desktop/Dementia\ Detection/projects/final/DAPF-main
+
+rm -rf .venv
+/opt/homebrew/bin/python3.11 -m venv .venv
+source .venv/bin/activate
+
+pip install -U pip setuptools wheel
+pip install "transformers==4.41.2" "tokenizers==0.19.1" "huggingface-hub<0.24" "sentencepiece>=0.1.99"
+pip install -r requirements.txt
+```
+
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
 1) the parent directory of your prompt_ad_code folder;
