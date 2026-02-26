@@ -19,29 +19,32 @@ DAPF-main/
 │  ├─ build_adress_csvs.py
 │  ├─ build_ccc_labeled_csv.py
 │  │
-│  ├─ ADReSS/
-│  │  ├─ train/
-│  │  │  ├─ transcription.zip
-│  │  │  ├─ cc_meta_data.txt
-│  │  │  └─ cd_meta_data.txt
-│  │  │
-│  │  ├─ test/
-│  │  │  ├─ transcription/            # OR transcription.zip
-│  │  │  ├─ meta_data.txt
-│  │  │  └─ test_results.txt          # optional (challenge-style template)
-│  │  │
-│  │  └─ github_labels/               # optional (if you have labeled test table)
-│  │     └─ adress-test_all.csv
+│  ├─ train/                         # ADReSS train inputs
+│  │  ├─ transcription.zip
+│  │  ├─ cc_meta_data.txt
+│  │  └─ cd_meta_data.txt
 │  │
-│  ├─ CCC/
+│  ├─ test/                          # ADReSS test inputs
+│  │  ├─ transcription/              # OR transcription.zip
+│  │  ├─ meta_data.txt
+│  │  └─ test_results.txt            # optional (challenge-style template)
+│  │
+│  ├─ CCC/                           # CCC inputs
 │  │  ├─ transcripts.zip
 │  │  ├─ participants.csv
 │  │  ├─ transcripts.csv
-│  │  └─ attributes.zip               # optional (often just a transcript list)
+│  │  └─ attributes.zip              # optional
 │  │
-│  ├─ adress-train_all.csv            # generated
-│  ├─ adress-test_all.csv             # generated (or merged with github_labels)
-│  └─ ccc_train_all.csv               # generated
+│  ├─ adress-train_all.csv           # generated (ADReSS train; cleaned text + labels)
+│  ├─ adress-test_all.csv            # generated (ADReSS test; cleaned text; may be unlabeled)
+│  ├─ adress-test_all.numbers         # optional (spreadsheet copy)
+│  ├─ ccc_train_all.csv              # generated (CCC labeled; cleaned text)
+│  │
+│  ├─ participant_all_ccc_transcript_cut.csv    # optional (older CCC pipeline artifact)
+│  ├─ participant_all_ccc_transcript_cut.numbers # optional (spreadsheet copy)
+│  │
+│  ├─ transcription_extracted/        # intermediate (unzipped transcripts)
+│  └─ data/                           # (if present) extra internal folder you can ignore
 │
 ├─ template/
 ├─ prompt_finetune.py
