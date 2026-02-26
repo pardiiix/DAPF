@@ -77,11 +77,21 @@ mkdir -p model/t5-large
 ```
 ```
 python - <<'PY'
+from pathlib import Path
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-m="t5-large"
-AutoTokenizer.from_pretrained(m, cache_dir="model")
-AutoModelForSeq2SeqLM.from_pretrained(m, cache_dir="model")
-print("Downloaded into ./model (HF cache layout).")
+
+out_dir = Path("model/t5-large")
+out_dir.mkdir(parents=True, exist_ok=True)
+
+m = "t5-large"
+tok = AutoTokenizer.from_pretrained(m)
+mdl = AutoModelForSeq2SeqLM.from_pretrained(m)
+
+tok.save_pretrained(out_dir)
+mdl.save_pretrained(out_dir)
+
+print("Saved tokenizer + model to:", out_dir.resolve())
+print("Has config.json:", (out_dir/"config.json").exists())
 PY
 ```
 
