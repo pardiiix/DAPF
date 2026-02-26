@@ -2,7 +2,7 @@
 #pip install loguru
 #pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 -f https://download.pytorch.org/whl/torch_stable.html
 transformers>=4.19.0
-sentencepiece==0.1.96
+sentencepiece>=0.2.0
 # scikit-learn>=0.24.2
 tqdm>=4.62.2
 tensorboardX
@@ -19,3 +19,4 @@ loguru
 protobuf==3.20.*
 #torch
 #torchvision
+
