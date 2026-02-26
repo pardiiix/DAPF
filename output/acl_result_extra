@@ -1,0 +1,148 @@
+
+roberta-base_tempmanual6_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+roberta-base_tempmanual73_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+roberta-base_tempmanual73_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue (only seed 0)
+acc mean 0.78939
+acc std 0.14126
+f1 mean 0.76277
+f1 std 0.16214
+all 0,1,2 seed
+acc mean 0.73016
+acc std 0.13929
+f1 mean 0.68176
+f1 std 0.17828
+
+roberta-base_tempmanual6_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+acc mean 0.78595
+acc std 0.14901
+f1 mean 0.75358
+f1 std 0.17208
+roberta-base_tempmanual6_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue (seed 1, 2)
+acc mean 0.81175
+acc std 0.13758
+f1 mean 0.79333
+f1 std 0.13655
+
+roberta-base_tempmanual71_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+{0: {'acc': [0.8875, 0.6875, 0.5, 0.6294871794871795, 0.8974358974358974], 'f1': [0.8731501057082452, 0.7044334975369457, 0.25, 0.5402597402597402, 0.862857142857
+143], 'fold': [0, 1, 2, 3, 4]}, 1: {'acc': [0.5625, 0.85, 0.5375, 0.5384615384615384, 0.8754578754578755], 'f1': [0.37777777777777777, 0.8102903133084219, 0.53349
+28229665072, 0.33458646616541354, 0.8589894242068155], 'fold': [0, 1, 2, 3, 4]}, 2: {'acc': [0.9125, 0.5, 0.5375, 0.8993589743589743, 0.8772893772893773], 'f1': [
+0.8923444976076554, 0.25, 0.5361344537815125, 0.9042518662771828, 0.8731501057082452], 'fold': [0, 1, 2, 3, 4]}}
+{'acc': [0.7875, 0.6791666666666667, 0.525, 0.689102564102564, 0.8833943833943834], 'f1': [0.7144241270312262, 0.5882412702817893, 0.43987575891600655, 0.59303269
+09007788, 0.8649988909240679]}
+{'acc': [0.7203846153846154, 0.6727838827838828, 0.7453296703296703], 'acc_std': [0.15309332365005204, 0.15555645626896827, 0.18572244285284123], 'f1': [0.6461400
+972724147, 0.5830273608849872, 0.6911761846749191], 'f1_std': [0.2323943067114767, 0.21638273956977253, 0.25986873932716786]}
+cv summary
+roberta-base_tempmanual71_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+acc mean 0.71283
+acc std 0.16479
+f1 mean 0.64011
+f1 std 0.23622
+roberta-base_tempmanual72_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+{0: {'acc': [0.7, 0.6125, 0.5375, 0.8480769230769231, 0.8772893772893773], 'f1': [0.7000000000000001, 0.6134899583175446, 0.5361344537815125, 0.8353488372093023,
+0.8731501057082452], 'fold': [0, 1, 2, 3, 4]}, 1: {'acc': [0.5375, 0.575, 0.5, 0.6794871794871795, 0.6043956043956045], 'f1': [0.5090016366612111, 0.4994438264738
+598, 0.25, 0.5718432510885341, 0.6000000000000001], 'fold': [0, 1, 2, 3, 4]}, 2: {'acc': [0.8875, 0.9, 0.6000000000000001, 0.860897435897436, 0.8296703296703296],
+ 'f1': [0.8731501057082452, 0.8901098901098902, 0.5333333333333333, 0.8521303258145363, 0.8332818771225687], 'fold': [0, 1, 2, 3, 4]}}
+{'acc': [0.7083333333333334, 0.6958333333333333, 0.5458333333333334, 0.7961538461538461, 0.7704517704517704], 'f1': [0.6940505807898187, 0.6676812249670983, 0.439
+8225957049486, 0.7531074713707909, 0.7688106609436046]}
+{'acc': [0.7150732600732601, 0.5792765567765568, 0.8156135531135531], 'acc_std': [0.13136573571628446, 0.06119064886999218, 0.11047729265100553], 'f1': [0.7116246
+710033208, 0.48605774284472103, 0.7964011064177148], 'f1_std': [0.1280316418002932, 0.12391195167991034, 0.13292278616633302]}
+cv summary
+roberta-base_tempmanual72_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvTrue
+acc mean 0.70332
+acc std 0.10101
+f1 mean 0.66469
+f1 std 0.12829
+roberta
+cv combo
+[6, 73, 71]
+roberta-base
+comb acc avg. 0.8205
+combo acc std 0.0158
+combo acc max 0.8428
+comb prec avg. 0.7554
+combo prec std 0.0510
+combo prec max 0.7935
+comb rec avg. 0.7096
+combo rec std 0.0894
+combo rec max 0.8119
+comb f1 avg. 0.7255
+combo f1 std 0.0341
+combo f1 max 0.7565
+bert+roberta
+cv combobert+roberta
+[(47, 6), (49, 73), (41, 71)]
+roberta-base
+comb acc avg. 0.8528
+combo acc std 0.0142
+combo acc max 0.8629
+comb prec avg. 0.7716
+combo prec std 0.0415
+combo prec max 0.8191
+comb rec avg. 0.8086
+combo rec std 0.0327
+combo rec max 0.8317
+comb f1 avg. 0.7881
+combo f1 std 0.0136
+combo f1 max 0.8038
+
+
+###############################################
+ccc-adress
+test summary
+roberta-base_tempmanual6_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint
+acc mean 0.81944
+acc std 0.05974
+acc max 0.89583
+f1 mean 0.81796
+f1 std 0.06112
+acc max 0.89583
+f1 max 0.89542
+
+roberta-base_tempmanual4_verbmanual_epoch15_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint
+acc mean 0.875
+acc std 0.00
+acc max 0.875
+f1 mean 0.875
+f1 std 0.001
+f1 max 0.8747
+roberta-base_tempmanual74_verbmanual_epoch10_optimadamw_stk0_100_domain2_bs16_prlr0.5_joint_cvFalse
+acc mean 0.87500
+acc std 0.03402
+acc max 0.91667
+f1 mean 0.87427
+f1 std 0.03444
+acc max 0.91667
+f1 max 0.91652
+
+fi .87
+[4, 74, 6]
+bert  adress test n=32
+roberta-base
+comb acc avg. 0.8750
+combo acc std 0.0340
+combo acc max 0.9167
+comb prec avg. 0.9126
+combo prec std 0.0561
+combo prec max 0.9545
+comb rec avg. 0.8333
+combo rec std 0.0340
+combo rec max 0.8750
+comb f1 avg. 0.8700
+combo f1 std 0.0329
+combo f1 max 0.9130
+
+[(7, 4), (4, 74),(40,6)]
+bert+roberta-base
+comb acc avg. 0.8958
+combo acc std 0.0196
+combo acc max 0.9167
+comb prec avg. 0.9944
+combo prec std 0.0157
+combo prec max 1.0000
+comb rec avg. 0.7963
+combo rec std 0.0365
+combo rec max 0.8333
+comb f1 avg. 0.8839
+combo f1 std 0.0238
+combo f1 max 0.9091
