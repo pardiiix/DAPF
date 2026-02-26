@@ -25,30 +25,20 @@ DAPF-main/
 │  │  └─ cd_meta_data.txt
 │  │
 │  ├─ test/                          # ADReSS test inputs
-│  │  ├─ transcription/              # OR transcription.zip
+│  │  ├─ transcription.zip       
 │  │  ├─ meta_data.txt
-│  │  └─ test_results.txt            # optional (challenge-style template)
 │  │
 │  ├─ CCC/                           # CCC inputs
 │  │  ├─ transcripts.zip
 │  │  ├─ participants.csv
 │  │  ├─ transcripts.csv
-│  │  └─ attributes.zip              # optional
+│  │  └─ attributes.zip              
 │  │
 │  ├─ adress-train_all.csv           # generated (ADReSS train; cleaned text + labels)
 │  ├─ adress-test_all.csv            # generated (ADReSS test; cleaned text; may be unlabeled)
-│  ├─ adress-test_all.numbers         # optional (spreadsheet copy)
 │  ├─ ccc_train_all.csv              # generated (CCC labeled; cleaned text)
 │  │
 │  ├─ participant_all_ccc_transcript_cut.csv    # optional (older CCC pipeline artifact)
-│  ├─ participant_all_ccc_transcript_cut.numbers # optional (spreadsheet copy)
-│  │
-│  ├─ transcription_extracted/        # intermediate (unzipped transcripts)
-│  └─ data/                           # (if present) extra internal folder you can ignore
-│
-├─ template/
-├─ prompt_finetune.py
-└─ run_prompt_finetune.py
 ```
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to 1) the parent directory of your prompt_ad_code folder; 2) the directory to store your output (model or results); 3) the directory you store pre-trained model downloaded from huggingface; 4) the directory you store ADReSS data (csv file), respectively.
