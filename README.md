@@ -56,6 +56,10 @@ pip install -U pip setuptools wheel
 pip install "transformers==4.41.2" "tokenizers==0.19.1" "huggingface-hub<0.24" "sentencepiece>=0.1.99"
 pip install -r requirements.txt
 ```
+```
+pip uninstall -y openprompt sentencepiece
+pip install --only-binary=:all: "sentencepiece>=0.1.99"
+```
 
 
 Before running the run_prompt_finetune.py or run_prompt_finetune_test.py in the following instruction, you'll have to define the project_root, logs_root, off_line_model_dir, data_dir configurations in your scripts. These configuration should be set to:
