@@ -94,7 +94,7 @@ print("Saved tokenizer + model to:", out_dir.resolve())
 print("Has config.json:", (out_dir/"config.json").exists())
 PY
 ```
-
+```
 On Apple Macbook:
 PYTORCH_ENABLE_MPS_FALLBACK=1 \
 python prompt_finetune.py \
